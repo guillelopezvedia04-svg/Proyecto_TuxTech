@@ -2,8 +2,8 @@ import sys
 
 from PyQt6.QtWidgets import QApplication, QMainWindow
 
-import icon_resources_rc
-from mainTuxTech_ui import Ui_MainWindow
+from src.generated import icon_resources_rc
+from src.generated.mainTuxTech_ui import Ui_MainWindow
 
 
 class MainWindow(QMainWindow):

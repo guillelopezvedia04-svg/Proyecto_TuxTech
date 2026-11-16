@@ -1,7 +1,7 @@
 import sys
 from PyQt6.QtWidgets import QApplication, QDialog, QMessageBox, QLineEdit, QPushButton, QCheckBox
 
-from loginTuxTech_ui import Ui_vtnLogin
+from src.generated.loginTuxTech_ui import Ui_vtnLogin
 
 class Login(QDialog):
     def __init__(self):
