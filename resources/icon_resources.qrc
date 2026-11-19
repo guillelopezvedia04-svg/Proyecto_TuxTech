@@ -1,5 +1,11 @@
 <RCC>
   <qresource prefix="/iconos">
+    <file>icons/ajustes-deslizadores.svg</file>
+    <file>icons/basura.svg</file>
+    <file>icons/cubo.svg</file>
+    <file>icons/mapa.svg</file>
+    <file>icons/trash.svg</file>
+    <file>icons/gente.png</file>
     <file alias="add(1).svg">icons/add(1).svg</file>
     <file alias="add.svg">icons/add.svg</file>
     <file alias="angle-left.svg">icons/angle-left.svg</file>

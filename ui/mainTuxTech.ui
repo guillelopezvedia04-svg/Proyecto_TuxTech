@@ -206,6 +206,10 @@
               <property name="text">
                <string/>
               </property>
+              <property name="icon">
+               <iconset resource="../resources/icon_resources.qrc">
+                <normaloff>:/iconos/icons/cubo.svg</normaloff>:/iconos/icons/cubo.svg</iconset>
+              </property>
               <property name="checkable">
                <bool>true</bool>
               </property>
@@ -400,6 +404,10 @@
              <widget class="QPushButton" name="btnCatalogo_long">
               <property name="text">
                <string>Catalogo</string>
+              </property>
+              <property name="icon">
+               <iconset resource="../resources/icon_resources.qrc">
+                <normaloff>:/iconos/icons/cubo.svg</normaloff>:/iconos/icons/cubo.svg</iconset>
               </property>
               <property name="checkable">
                <bool>true</bool>
@@ -727,6 +735,10 @@
                 <property name="text">
                  <string>Agregar</string>
                 </property>
+                <property name="icon">
+                 <iconset resource="../resources/icon_resources.qrc">
+                  <normaloff>:/iconos/add.svg</normaloff>:/iconos/add.svg</iconset>
+                </property>
                </widget>
               </item>
               <item row="2" column="0">
@@ -811,6 +823,10 @@
                   <property name="text">
                    <string>Categorias</string>
                   </property>
+                  <property name="icon">
+                   <iconset resource="../resources/icon_resources.qrc">
+                    <normaloff>:/iconos/icons/mapa.svg</normaloff>:/iconos/icons/mapa.svg</iconset>
+                  </property>
                   <property name="checkable">
                    <bool>true</bool>
                   </property>
@@ -823,6 +839,10 @@
                  <widget class="QPushButton" name="btnMarcas">
                   <property name="text">
                    <string>Marcas</string>
+                  </property>
+                  <property name="icon">
+                   <iconset resource="../resources/icon_resources.qrc">
+                    <normaloff>:/iconos/stats.svg</normaloff>:/iconos/stats.svg</iconset>
                   </property>
                   <property name="checkable">
                    <bool>true</bool>
@@ -837,6 +857,10 @@
                   <property name="text">
                    <string>Proveedores</string>
                   </property>
+                  <property name="icon">
+                   <iconset resource="../resources/icon_resources.qrc">
+                    <normaloff>:/iconos/icons/ajustes-deslizadores.svg</normaloff>:/iconos/icons/ajustes-deslizadores.svg</iconset>
+                  </property>
                   <property name="checkable">
                    <bool>true</bool>
                   </property>
@@ -850,7 +874,7 @@
               <item row="1" column="0">
                <widget class="QStackedWidget" name="stwCatalogo">
                 <property name="currentIndex">
-                 <number>1</number>
+                 <number>2</number>
                 </property>
                 <widget class="QWidget" name="pgCategorias">
                  <layout class="QGridLayout" name="gridLayout_9">
@@ -944,6 +968,10 @@
                       <property name="text">
                        <string>Agregar</string>
                       </property>
+                      <property name="icon">
+                       <iconset resource="../resources/icon_resources.qrc">
+                        <normaloff>:/iconos/add.svg</normaloff>:/iconos/add.svg</iconset>
+                      </property>
                      </widget>
                     </item>
                     <item>
@@ -951,12 +979,20 @@
                       <property name="text">
                        <string>Actuaizar</string>
                       </property>
+                      <property name="icon">
+                       <iconset resource="../resources/icon_resources.qrc">
+                        <normaloff>:/iconos/plus.svg</normaloff>:/iconos/plus.svg</iconset>
+                      </property>
                      </widget>
                     </item>
                     <item>
                      <widget class="QPushButton" name="btnDeshabilitaHabilitarCategoria">
                       <property name="text">
                        <string>Deshabilitar</string>
+                      </property>
+                      <property name="icon">
+                       <iconset resource="../resources/icon_resources.qrc">
+                        <normaloff>:/iconos/icons/trash.svg</normaloff>:/iconos/icons/trash.svg</iconset>
                       </property>
                      </widget>
                     </item>
@@ -1050,6 +1086,10 @@
                       <property name="text">
                        <string>Agregar</string>
                       </property>
+                      <property name="icon">
+                       <iconset resource="../resources/icon_resources.qrc">
+                        <normaloff>:/iconos/add.svg</normaloff>:/iconos/add.svg</iconset>
+                      </property>
                      </widget>
                     </item>
                     <item>
@@ -1057,12 +1097,20 @@
                       <property name="text">
                        <string>Actuaizar</string>
                       </property>
+                      <property name="icon">
+                       <iconset resource="../resources/icon_resources.qrc">
+                        <normaloff>:/iconos/plus.svg</normaloff>:/iconos/plus.svg</iconset>
+                      </property>
                      </widget>
                     </item>
                     <item>
                      <widget class="QPushButton" name="btnDeshabilitaHabilitarMArca">
                       <property name="text">
                        <string>Deshabilitar</string>
+                      </property>
+                      <property name="icon">
+                       <iconset resource="../resources/icon_resources.qrc">
+                        <normaloff>:/iconos/icons/basura.svg</normaloff>:/iconos/icons/basura.svg</iconset>
                       </property>
                      </widget>
                     </item>
@@ -1165,6 +1213,10 @@
                       <property name="text">
                        <string>Agregar</string>
                       </property>
+                      <property name="icon">
+                       <iconset resource="../resources/icon_resources.qrc">
+                        <normaloff>:/iconos/add.svg</normaloff>:/iconos/add.svg</iconset>
+                      </property>
                      </widget>
                     </item>
                     <item>
@@ -1172,12 +1224,20 @@
                       <property name="text">
                        <string>Actuaizar</string>
                       </property>
+                      <property name="icon">
+                       <iconset resource="../resources/icon_resources.qrc">
+                        <normaloff>:/iconos/plus.svg</normaloff>:/iconos/plus.svg</iconset>
+                      </property>
                      </widget>
                     </item>
                     <item>
                      <widget class="QPushButton" name="btnDeshabilitaHabilitarProveedores">
                       <property name="text">
                        <string>Deshabilitar</string>
+                      </property>
+                      <property name="icon">
+                       <iconset resource="../resources/icon_resources.qrc">
+                        <normaloff>:/iconos/icons/trash.svg</normaloff>:/iconos/icons/trash.svg</iconset>
                       </property>
                      </widget>
                     </item>
@@ -1310,6 +1370,10 @@
                   <property name="text">
                    <string>Actualizar</string>
                   </property>
+                  <property name="icon">
+                   <iconset resource="../resources/icon_resources.qrc">
+                    <normaloff>:/iconos/plus.svg</normaloff>:/iconos/plus.svg</iconset>
+                  </property>
                  </widget>
                 </item>
                 <item>
@@ -1332,6 +1396,10 @@
                  <widget class="QPushButton" name="btnEliminarProducto">
                   <property name="text">
                    <string>Eliminar</string>
+                  </property>
+                  <property name="icon">
+                   <iconset resource="../resources/icon_resources.qrc">
+                    <normaloff>:/iconos/icons/trash.svg</normaloff>:/iconos/icons/trash.svg</iconset>
                   </property>
                  </widget>
                 </item>
