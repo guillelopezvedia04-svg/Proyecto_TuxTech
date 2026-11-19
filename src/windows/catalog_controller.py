@@ -23,6 +23,8 @@ class CatalogController:
         self.service = service
         self.seleccionado_id = None
         self.seleccionado_activo = None
+        self.fila_seleccionada = None
+        self.filtro = ""
 
         self.configurar_tabla()
         self.boton_agregar.clicked.connect(self.agregar)
@@ -65,6 +67,24 @@ class CatalogController:
             self.tabla.setItem(fila, 3, QTableWidgetItem(estado))
 
         self.tabla.blockSignals(False)
+        self.aplicar_filtro()
+
+    def filtrar(self, texto):
+        self.filtro = texto.strip().casefold()
+        self.aplicar_filtro()
+
+    def aplicar_filtro(self):
+        for fila in range(self.tabla.rowCount()):
+            item_nombre = self.tabla.item(fila, 1)
+            nombre = item_nombre.text().casefold() if item_nombre else ""
+
+            self.tabla.setRowHidden(fila, self.filtro not in nombre)
+
+        if (
+            self.fila_seleccionada is not None
+            and self.tabla.isRowHidden(self.fila_seleccionada)
+        ):
+            self.limpiar()
 
     def seleccionar(self, fila, columna, fila_anterior, columna_anterior):
         if fila < 0:
@@ -75,6 +95,7 @@ class CatalogController:
             return
 
         self.seleccionado_id = int(item_id.text())
+        self.fila_seleccionada = fila
         self.nombre.setText(self.tabla.item(fila, 1).text())
 
         descripcion = self.tabla.item(fila, 2)
@@ -96,6 +117,7 @@ class CatalogController:
         self.descripcion.clear()
         self.seleccionado_id = None
         self.seleccionado_activo = None
+        self.fila_seleccionada = None
         self.boton_estado.setText("Deshabilitar")
         self.tabla.clearSelection()
         self.boton_actualizar.setEnabled(False)
