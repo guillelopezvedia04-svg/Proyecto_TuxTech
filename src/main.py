@@ -10,14 +10,28 @@ def main():
     initialize_database()
     app = QApplication(sys.argv)
 
-    login = Login()
-    if login.exec() != QDialog.DialogCode.Accepted:
-        return
+    while True:
+        login = Login()
+        if login.exec() != QDialog.DialogCode.Accepted:
+            break
 
-    window = MainWindow()
-    window.show()
+        authenticated_user = login.authenticated_user
+        window = MainWindow(authenticated_user)
 
-    sys.exit(app.exec())
+        logout_requested = False
+
+        def on_logout_requested():
+            nonlocal logout_requested
+            logout_requested = True
+
+        window.logout_requested.connect(on_logout_requested)
+        window.show()
+        app.exec()
+
+        if not logout_requested:
+            break
+
+    sys.exit(0)
 
 if __name__ == "__main__":
     main()

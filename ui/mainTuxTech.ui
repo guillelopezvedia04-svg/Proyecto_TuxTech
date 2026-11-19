@@ -105,7 +105,7 @@
                <string/>
               </property>
               <property name="pixmap">
-               <pixmap>:/iconos/tuxtexh_logo.svg</pixmap>
+               <pixmap resource="../resources/icon_resources.qrc">:/iconos/tuxtexh_logo.svg</pixmap>
               </property>
               <property name="scaledContents">
                <bool>true</bool>
@@ -135,7 +135,7 @@
                <string/>
               </property>
               <property name="icon">
-               <iconset>
+               <iconset resource="../resources/icon_resources.qrc">
                 <normaloff>:/iconos/add.svg</normaloff>
                 <normalon>:/iconos/add(1).svg</normalon>:/iconos/add.svg</iconset>
               </property>
@@ -159,7 +159,7 @@
                <string/>
               </property>
               <property name="icon">
-               <iconset>
+               <iconset resource="../resources/icon_resources.qrc">
                 <normaloff>:/iconos/apps.svg</normaloff>
                 <normalon>:/iconos/apps(1).svg</normalon>:/iconos/apps.svg</iconset>
               </property>
@@ -183,7 +183,7 @@
                <string/>
               </property>
               <property name="icon">
-               <iconset>
+               <iconset resource="../resources/icon_resources.qrc">
                 <normaloff>:/iconos/books.svg</normaloff>
                 <normalon>:/iconos/books(1).svg</normalon>:/iconos/books.svg</iconset>
               </property>
@@ -192,6 +192,19 @@
                 <width>20</width>
                 <height>20</height>
                </size>
+              </property>
+              <property name="checkable">
+               <bool>true</bool>
+              </property>
+              <property name="autoExclusive">
+               <bool>true</bool>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QPushButton" name="btnCatalogo_short">
+              <property name="text">
+               <string/>
               </property>
               <property name="checkable">
                <bool>true</bool>
@@ -224,7 +237,7 @@
                <string/>
               </property>
               <property name="icon">
-               <iconset>
+               <iconset resource="../resources/icon_resources.qrc">
                 <normaloff>:/iconos/exit.svg</normaloff>:/iconos/exit.svg</iconset>
               </property>
               <property name="iconSize">
@@ -241,7 +254,7 @@
                <string/>
               </property>
               <property name="icon">
-               <iconset>
+               <iconset resource="../resources/icon_resources.qrc">
                 <normaloff>:/iconos/cross.svg</normaloff>:/iconos/cross.svg</iconset>
               </property>
               <property name="iconSize">
@@ -286,7 +299,7 @@
                <string/>
               </property>
               <property name="pixmap">
-               <pixmap>:/iconos/tuxtexh_logo.svg</pixmap>
+               <pixmap resource="../resources/icon_resources.qrc">:/iconos/tuxtexh_logo.svg</pixmap>
               </property>
               <property name="scaledContents">
                <bool>true</bool>
@@ -310,7 +323,7 @@
                <string>Agregar</string>
               </property>
               <property name="icon">
-               <iconset>
+               <iconset resource="../resources/icon_resources.qrc">
                 <normaloff>:/iconos/add.svg</normaloff>
                 <normalon>:/iconos/add(1).svg</normalon>:/iconos/add.svg</iconset>
               </property>
@@ -334,7 +347,7 @@
                <string>Editar</string>
               </property>
               <property name="icon">
-               <iconset>
+               <iconset resource="../resources/icon_resources.qrc">
                 <normaloff>:/iconos/apps.svg</normaloff>
                 <normalon>:/iconos/apps(1).svg</normalon>:/iconos/apps.svg</iconset>
               </property>
@@ -358,7 +371,7 @@
                <string>Historial</string>
               </property>
               <property name="icon">
-               <iconset>
+               <iconset resource="../resources/icon_resources.qrc">
                 <normaloff>:/iconos/books.svg</normaloff>
                 <normalon>:/iconos/books(1).svg</normalon>:/iconos/books.svg</iconset>
               </property>
@@ -367,6 +380,19 @@
                 <width>14</width>
                 <height>14</height>
                </size>
+              </property>
+              <property name="checkable">
+               <bool>true</bool>
+              </property>
+              <property name="autoExclusive">
+               <bool>true</bool>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QPushButton" name="btnCatalogo_long">
+              <property name="text">
+               <string>Catalogo</string>
               </property>
               <property name="checkable">
                <bool>true</bool>
@@ -399,7 +425,7 @@
                <string>Cerrar Sesion</string>
               </property>
               <property name="icon">
-               <iconset>
+               <iconset resource="../resources/icon_resources.qrc">
                 <normaloff>:/iconos/exit.svg</normaloff>:/iconos/exit.svg</iconset>
               </property>
               <property name="iconSize">
@@ -416,7 +442,7 @@
                <string>Salir</string>
               </property>
               <property name="icon">
-               <iconset>
+               <iconset resource="../resources/icon_resources.qrc">
                 <normaloff>:/iconos/cross.svg</normaloff>:/iconos/cross.svg</iconset>
               </property>
               <property name="iconSize">
@@ -464,7 +490,7 @@
               <height>60</height>
              </size>
             </property>
-            <layout class="QHBoxLayout" name="horizontalLayout_5">
+            <layout class="QHBoxLayout" name="horizontalLayout_10">
              <item>
               <widget class="QPushButton" name="btnMoverBarra">
                <property name="maximumSize">
@@ -477,7 +503,7 @@
                 <string/>
                </property>
                <property name="icon">
-                <iconset>
+                <iconset resource="../resources/icon_resources.qrc">
                  <normaloff>:/iconos/menu-burger.svg</normaloff>:/iconos/menu-burger.svg</iconset>
                </property>
                <property name="iconSize">
@@ -495,20 +521,22 @@
               </widget>
              </item>
              <item>
-              <spacer name="horizontalSpacer_3">
-               <property name="orientation">
-                <enum>Qt::Orientation::Horizontal</enum>
-               </property>
-               <property name="sizeType">
-                <enum>QSizePolicy::Policy::Expanding</enum>
-               </property>
-               <property name="sizeHint" stdset="0">
-                <size>
-                 <width>275</width>
-                 <height>20</height>
-                </size>
-               </property>
-              </spacer>
+              <layout class="QHBoxLayout" name="horizontalLayout_5">
+               <item>
+                <widget class="QLabel" name="label_10">
+                 <property name="text">
+                  <string>Buscar:</string>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QLineEdit" name="txtBuscar">
+                 <property name="placeholderText">
+                  <string>Ej: Patata</string>
+                 </property>
+                </widget>
+               </item>
+              </layout>
              </item>
              <item>
               <layout class="QHBoxLayout" name="horizontalLayout_3">
@@ -530,7 +558,7 @@
                   <string/>
                  </property>
                  <property name="pixmap">
-                  <pixmap>:/iconos/user(1).svg</pixmap>
+                  <pixmap resource="../resources/icon_resources.qrc">:/iconos/user(1).svg</pixmap>
                  </property>
                  <property name="scaledContents">
                   <bool>true</bool>
@@ -562,39 +590,831 @@
            </widget>
           </item>
           <item>
-           <widget class="QStackedWidget" name="stckWidget">
+           <widget class="QStackedWidget" name="stwPrincipal">
             <property name="currentIndex">
-             <number>1</number>
+             <number>3</number>
             </property>
             <widget class="QWidget" name="pgAgregar">
-             <layout class="QGridLayout" name="gridLayout_2">
+             <layout class="QGridLayout" name="gridLayout_3">
               <item row="0" column="0">
-               <widget class="QLabel" name="label_4">
+               <widget class="QWidget" name="widget_2" native="true">
+                <layout class="QGridLayout" name="gridLayout_2">
+                 <item row="0" column="0">
+                  <layout class="QHBoxLayout" name="horizontalLayout_11">
+                   <item>
+                    <widget class="QLabel" name="label_4">
+                     <property name="text">
+                      <string>Nombre:</string>
+                     </property>
+                    </widget>
+                   </item>
+                   <item>
+                    <widget class="QLineEdit" name="txtAgregarNombreProducto"/>
+                   </item>
+                  </layout>
+                 </item>
+                 <item row="0" column="1">
+                  <layout class="QHBoxLayout" name="horizontalLayout_21">
+                   <item>
+                    <widget class="QLabel" name="label_19">
+                     <property name="text">
+                      <string>Stock:</string>
+                     </property>
+                    </widget>
+                   </item>
+                   <item>
+                    <widget class="QSpinBox" name="sbAgregarStockProducto">
+                     <property name="maximum">
+                      <number>999999</number>
+                     </property>
+                    </widget>
+                   </item>
+                  </layout>
+                 </item>
+                 <item row="1" column="0">
+                  <layout class="QHBoxLayout" name="horizontalLayout_12">
+                   <item>
+                    <widget class="QLabel" name="label_11">
+                     <property name="text">
+                      <string>Descripcion:</string>
+                     </property>
+                    </widget>
+                   </item>
+                   <item>
+                    <widget class="QLineEdit" name="txtAgregarDescripcionProducto"/>
+                   </item>
+                  </layout>
+                 </item>
+                 <item row="1" column="1">
+                  <layout class="QHBoxLayout" name="horizontalLayout_22">
+                   <item>
+                    <widget class="QLabel" name="label_22">
+                     <property name="text">
+                      <string>Categoria:</string>
+                     </property>
+                    </widget>
+                   </item>
+                   <item>
+                    <widget class="QComboBox" name="cbxAgregarCategoriaProducto"/>
+                   </item>
+                  </layout>
+                 </item>
+                 <item row="2" column="0" rowspan="2">
+                  <layout class="QHBoxLayout" name="horizontalLayout_13">
+                   <item>
+                    <widget class="QLabel" name="label_12">
+                     <property name="text">
+                      <string>Precio:</string>
+                     </property>
+                    </widget>
+                   </item>
+                   <item>
+                    <widget class="QDoubleSpinBox" name="sbAgregarPrecioProducto">
+                     <property name="maximum">
+                      <double>999999.989999999990687</double>
+                     </property>
+                    </widget>
+                   </item>
+                  </layout>
+                 </item>
+                 <item row="2" column="1">
+                  <layout class="QHBoxLayout" name="horizontalLayout_24">
+                   <item>
+                    <widget class="QLabel" name="label_18">
+                     <property name="text">
+                      <string>Marca:</string>
+                     </property>
+                    </widget>
+                   </item>
+                   <item>
+                    <widget class="QComboBox" name="cbxAgregarMarcaProducto"/>
+                   </item>
+                  </layout>
+                 </item>
+                 <item row="3" column="1">
+                  <layout class="QHBoxLayout" name="horizontalLayout_25">
+                   <item>
+                    <widget class="QLabel" name="label_21">
+                     <property name="text">
+                      <string>Proveedor:</string>
+                     </property>
+                    </widget>
+                   </item>
+                   <item>
+                    <widget class="QComboBox" name="cbxAgregarProveedorProducto"/>
+                   </item>
+                  </layout>
+                 </item>
+                </layout>
+               </widget>
+              </item>
+              <item row="1" column="0">
+               <widget class="QPushButton" name="btnAgregarProducto">
                 <property name="text">
                  <string>Agregar</string>
                 </property>
                </widget>
               </item>
+              <item row="2" column="0">
+               <widget class="QTableWidget" name="tbwAgregarProducto">
+                <column>
+                 <property name="text">
+                  <string>idProducto</string>
+                 </property>
+                </column>
+                <column>
+                 <property name="text">
+                  <string>Nombre</string>
+                 </property>
+                </column>
+                <column>
+                 <property name="text">
+                  <string>Descripcion</string>
+                 </property>
+                </column>
+                <column>
+                 <property name="text">
+                  <string>Precio</string>
+                 </property>
+                </column>
+                <column>
+                 <property name="text">
+                  <string>Stock</string>
+                 </property>
+                </column>
+                <column>
+                 <property name="text">
+                  <string>Categoria</string>
+                 </property>
+                </column>
+                <column>
+                 <property name="text">
+                  <string>Marca</string>
+                 </property>
+                </column>
+                <column>
+                 <property name="text">
+                  <string>Proveedor</string>
+                 </property>
+                </column>
+               </widget>
+              </item>
+             </layout>
+            </widget>
+            <widget class="QWidget" name="pgCatalogo">
+             <layout class="QGridLayout" name="catalogLayout">
+              <property name="leftMargin">
+               <number>0</number>
+              </property>
+              <property name="topMargin">
+               <number>0</number>
+              </property>
+              <property name="rightMargin">
+               <number>0</number>
+              </property>
+              <property name="bottomMargin">
+               <number>0</number>
+              </property>
+              <property name="spacing">
+               <number>0</number>
+              </property>
+              <item row="0" column="0">
+               <layout class="QHBoxLayout" name="catalogBarLayout">
+                <property name="leftMargin">
+                 <number>6</number>
+                </property>
+                <property name="topMargin">
+                 <number>6</number>
+                </property>
+                <property name="rightMargin">
+                 <number>6</number>
+                </property>
+                <property name="bottomMargin">
+                 <number>6</number>
+                </property>
+                <item>
+                 <widget class="QPushButton" name="btnCategorias">
+                  <property name="text">
+                   <string>Categorias</string>
+                  </property>
+                  <property name="checkable">
+                   <bool>true</bool>
+                  </property>
+                  <property name="autoExclusive">
+                   <bool>true</bool>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <widget class="QPushButton" name="btnMarcas">
+                  <property name="text">
+                   <string>Marcas</string>
+                  </property>
+                  <property name="checkable">
+                   <bool>true</bool>
+                  </property>
+                  <property name="autoExclusive">
+                   <bool>true</bool>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <widget class="QPushButton" name="btnProveedores">
+                  <property name="text">
+                   <string>Proveedores</string>
+                  </property>
+                  <property name="checkable">
+                   <bool>true</bool>
+                  </property>
+                  <property name="autoExclusive">
+                   <bool>true</bool>
+                  </property>
+                 </widget>
+                </item>
+               </layout>
+              </item>
+              <item row="1" column="0">
+               <widget class="QStackedWidget" name="stwCatalogo">
+                <property name="currentIndex">
+                 <number>1</number>
+                </property>
+                <widget class="QWidget" name="pgCategorias">
+                 <layout class="QGridLayout" name="gridLayout_9">
+                  <item row="0" column="0">
+                   <widget class="QWidget" name="wdgCategoria" native="true">
+                    <layout class="QGridLayout" name="gridLayout_5">
+                     <item row="0" column="0">
+                      <layout class="QHBoxLayout" name="horizontalLayout_6">
+                       <item>
+                        <widget class="QLabel" name="label_7">
+                         <property name="text">
+                          <string>Nombre Categoria:</string>
+                         </property>
+                        </widget>
+                       </item>
+                       <item>
+                        <widget class="QLineEdit" name="txtNombrecategoria"/>
+                       </item>
+                      </layout>
+                     </item>
+                     <item row="0" column="1" rowspan="2">
+                      <layout class="QHBoxLayout" name="horizontalLayout_8">
+                       <item>
+                        <widget class="QLabel" name="label_9">
+                         <property name="text">
+                          <string>Estado:</string>
+                         </property>
+                        </widget>
+                       </item>
+                       <item>
+                        <widget class="QComboBox" name="cbxEstadoCategoria">
+                         <item>
+                          <property name="text">
+                           <string>Activo</string>
+                          </property>
+                         </item>
+                         <item>
+                          <property name="text">
+                           <string>Inactivo</string>
+                          </property>
+                         </item>
+                        </widget>
+                       </item>
+                      </layout>
+                     </item>
+                     <item row="1" column="0">
+                      <layout class="QHBoxLayout" name="horizontalLayout_7">
+                       <item>
+                        <widget class="QLabel" name="label_8">
+                         <property name="text">
+                          <string>Descripcion: </string>
+                         </property>
+                        </widget>
+                       </item>
+                       <item>
+                        <widget class="QLineEdit" name="txtDescripcionCategoria"/>
+                       </item>
+                      </layout>
+                     </item>
+                    </layout>
+                   </widget>
+                  </item>
+                  <item row="1" column="0">
+                   <widget class="QTableWidget" name="tbwCategoria">
+                    <column>
+                     <property name="text">
+                      <string>idCategoria</string>
+                     </property>
+                    </column>
+                    <column>
+                     <property name="text">
+                      <string>Nombre</string>
+                     </property>
+                    </column>
+                    <column>
+                     <property name="text">
+                      <string>Descripcion</string>
+                     </property>
+                    </column>
+                    <column>
+                     <property name="text">
+                      <string>Estado</string>
+                     </property>
+                    </column>
+                   </widget>
+                  </item>
+                  <item row="2" column="0">
+                   <layout class="QHBoxLayout" name="horizontalLayout_9">
+                    <item>
+                     <widget class="QPushButton" name="btnAgregarCategoria">
+                      <property name="text">
+                       <string>Agregar</string>
+                      </property>
+                     </widget>
+                    </item>
+                    <item>
+                     <widget class="QPushButton" name="btnActualizarCategoria">
+                      <property name="text">
+                       <string>Actuaizar</string>
+                      </property>
+                     </widget>
+                    </item>
+                    <item>
+                     <widget class="QPushButton" name="btnDeshabilitaHabilitarCategoria">
+                      <property name="text">
+                       <string>Deshabilitar</string>
+                      </property>
+                     </widget>
+                    </item>
+                   </layout>
+                  </item>
+                 </layout>
+                </widget>
+                <widget class="QWidget" name="pgMarcas">
+                 <layout class="QGridLayout" name="gridLayout_8">
+                  <item row="0" column="0">
+                   <layout class="QHBoxLayout" name="horizontalLayout_17">
+                    <item>
+                     <widget class="QLabel" name="label_15">
+                      <property name="text">
+                       <string>Nombre Marca:</string>
+                      </property>
+                     </widget>
+                    </item>
+                    <item>
+                     <widget class="QLineEdit" name="txtNombreMarca"/>
+                    </item>
+                   </layout>
+                  </item>
+                  <item row="0" column="1" rowspan="2">
+                   <layout class="QHBoxLayout" name="horizontalLayout_16">
+                    <item>
+                     <widget class="QLabel" name="label_14">
+                      <property name="text">
+                       <string>Estado:</string>
+                      </property>
+                     </widget>
+                    </item>
+                    <item>
+                     <widget class="QComboBox" name="cbxEstadoMarca">
+                      <item>
+                       <property name="text">
+                        <string>Activo</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Inactivo</string>
+                       </property>
+                      </item>
+                     </widget>
+                    </item>
+                   </layout>
+                  </item>
+                  <item row="1" column="0">
+                   <layout class="QHBoxLayout" name="horizontalLayout_15">
+                    <item>
+                     <widget class="QLabel" name="label_13">
+                      <property name="text">
+                       <string>Descripcion: </string>
+                      </property>
+                     </widget>
+                    </item>
+                    <item>
+                     <widget class="QLineEdit" name="txtDescripcionMarca"/>
+                    </item>
+                   </layout>
+                  </item>
+                  <item row="2" column="0" colspan="2">
+                   <widget class="QTableWidget" name="tbwCategoriaMarca">
+                    <column>
+                     <property name="text">
+                      <string>idCategoria</string>
+                     </property>
+                    </column>
+                    <column>
+                     <property name="text">
+                      <string>Nombre</string>
+                     </property>
+                    </column>
+                    <column>
+                     <property name="text">
+                      <string>Descripcion</string>
+                     </property>
+                    </column>
+                    <column>
+                     <property name="text">
+                      <string>Estado</string>
+                     </property>
+                    </column>
+                   </widget>
+                  </item>
+                  <item row="3" column="0" colspan="2">
+                   <layout class="QHBoxLayout" name="horizontalLayout_14">
+                    <item>
+                     <widget class="QPushButton" name="btnAgregarMarca">
+                      <property name="text">
+                       <string>Agregar</string>
+                      </property>
+                     </widget>
+                    </item>
+                    <item>
+                     <widget class="QPushButton" name="btnActualizarMarca">
+                      <property name="text">
+                       <string>Actuaizar</string>
+                      </property>
+                     </widget>
+                    </item>
+                    <item>
+                     <widget class="QPushButton" name="btnDeshabilitaHabilitarMArca">
+                      <property name="text">
+                       <string>Deshabilitar</string>
+                      </property>
+                     </widget>
+                    </item>
+                   </layout>
+                  </item>
+                 </layout>
+                </widget>
+                <widget class="QWidget" name="pgProveedores">
+                 <layout class="QGridLayout" name="gridLayout_7">
+                  <item row="0" column="0">
+                   <layout class="QHBoxLayout" name="horizontalLayout_19">
+                    <item>
+                     <widget class="QLabel" name="label_16">
+                      <property name="text">
+                       <string>Nombre Proveedor:</string>
+                      </property>
+                     </widget>
+                    </item>
+                    <item>
+                     <widget class="QLineEdit" name="txtNombreProveedores"/>
+                    </item>
+                   </layout>
+                  </item>
+                  <item row="0" column="1">
+                   <layout class="QHBoxLayout" name="horizontalLayout_20">
+                    <item>
+                     <widget class="QLabel" name="label_17">
+                      <property name="text">
+                       <string>Descripcion:</string>
+                      </property>
+                     </widget>
+                    </item>
+                    <item>
+                     <widget class="QLineEdit" name="txtDescripcionProveedores"/>
+                    </item>
+                   </layout>
+                  </item>
+                  <item row="1" column="0" colspan="2">
+                   <layout class="QHBoxLayout" name="horizontalLayout_23">
+                    <item>
+                     <widget class="QLabel" name="label_20">
+                      <property name="text">
+                       <string>Estado:</string>
+                      </property>
+                     </widget>
+                    </item>
+                    <item>
+                     <widget class="QComboBox" name="cbxProveedores">
+                      <item>
+                       <property name="text">
+                        <string>Activo</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Inactivo</string>
+                       </property>
+                      </item>
+                     </widget>
+                    </item>
+                   </layout>
+                  </item>
+                  <item row="2" column="0" colspan="2">
+                   <widget class="QTableWidget" name="tbwProveedores">
+                    <attribute name="horizontalHeaderCascadingSectionResizes">
+                     <bool>false</bool>
+                    </attribute>
+                    <attribute name="horizontalHeaderHighlightSections">
+                     <bool>false</bool>
+                    </attribute>
+                    <attribute name="horizontalHeaderStretchLastSection">
+                     <bool>true</bool>
+                    </attribute>
+                    <column>
+                     <property name="text">
+                      <string>idCategoria</string>
+                     </property>
+                    </column>
+                    <column>
+                     <property name="text">
+                      <string>Nombre</string>
+                     </property>
+                    </column>
+                    <column>
+                     <property name="text">
+                      <string>Descripcion</string>
+                     </property>
+                    </column>
+                    <column>
+                     <property name="text">
+                      <string>Estado</string>
+                     </property>
+                    </column>
+                   </widget>
+                  </item>
+                  <item row="3" column="0" colspan="2">
+                   <layout class="QHBoxLayout" name="horizontalLayout_18">
+                    <item>
+                     <widget class="QPushButton" name="btnAgregarProveedores">
+                      <property name="text">
+                       <string>Agregar</string>
+                      </property>
+                     </widget>
+                    </item>
+                    <item>
+                     <widget class="QPushButton" name="btnActualizarProveedores">
+                      <property name="text">
+                       <string>Actuaizar</string>
+                      </property>
+                     </widget>
+                    </item>
+                    <item>
+                     <widget class="QPushButton" name="btnDeshabilitaHabilitarProveedores">
+                      <property name="text">
+                       <string>Deshabilitar</string>
+                      </property>
+                     </widget>
+                    </item>
+                   </layout>
+                  </item>
+                 </layout>
+                </widget>
+               </widget>
+              </item>
              </layout>
             </widget>
             <widget class="QWidget" name="pgEditar">
-             <layout class="QGridLayout" name="gridLayout_4">
-              <item row="0" column="0">
-               <widget class="QLabel" name="label_5">
-                <property name="text">
-                 <string>Editar</string>
-                </property>
+             <layout class="QVBoxLayout" name="verticalLayout_8">
+              <item>
+               <widget class="QWidget" name="widget_3" native="true">
+                <layout class="QGridLayout" name="gridLayout_4">
+                 <item row="0" column="0">
+                  <layout class="QHBoxLayout" name="horizontalLayout_26">
+                   <item>
+                    <widget class="QLabel" name="label_5">
+                     <property name="text">
+                      <string>Nombre:</string>
+                     </property>
+                    </widget>
+                   </item>
+                   <item>
+                    <widget class="QLineEdit" name="txtActualizarNombreProducto"/>
+                   </item>
+                  </layout>
+                 </item>
+                 <item row="0" column="1">
+                  <layout class="QHBoxLayout" name="horizontalLayout_27">
+                   <item>
+                    <widget class="QLabel" name="label_23">
+                     <property name="text">
+                      <string>Stock:</string>
+                     </property>
+                    </widget>
+                   </item>
+                   <item>
+                    <widget class="QSpinBox" name="sbActualizarStockProducto">
+                     <property name="maximum">
+                      <number>999999</number>
+                     </property>
+                    </widget>
+                   </item>
+                  </layout>
+                 </item>
+                 <item row="1" column="0">
+                  <layout class="QHBoxLayout" name="horizontalLayout_28">
+                   <item>
+                    <widget class="QLabel" name="label_24">
+                     <property name="text">
+                      <string>Descripcion:</string>
+                     </property>
+                    </widget>
+                   </item>
+                   <item>
+                    <widget class="QLineEdit" name="txtActualizarDescripcionProducto"/>
+                   </item>
+                  </layout>
+                 </item>
+                 <item row="1" column="1">
+                  <layout class="QHBoxLayout" name="horizontalLayout_29">
+                   <item>
+                    <widget class="QLabel" name="label_25">
+                     <property name="text">
+                      <string>Categoria:</string>
+                     </property>
+                    </widget>
+                   </item>
+                   <item>
+                    <widget class="QComboBox" name="cbxActualizarCategoriaProducto"/>
+                   </item>
+                  </layout>
+                 </item>
+                 <item row="2" column="0" rowspan="2">
+                  <layout class="QHBoxLayout" name="horizontalLayout_30">
+                   <item>
+                    <widget class="QLabel" name="label_26">
+                     <property name="text">
+                      <string>Precio:</string>
+                     </property>
+                    </widget>
+                   </item>
+                   <item>
+                    <widget class="QDoubleSpinBox" name="sbActualizarPrecioProducto">
+                     <property name="maximum">
+                      <double>99999.990000000005239</double>
+                     </property>
+                    </widget>
+                   </item>
+                  </layout>
+                 </item>
+                 <item row="2" column="1">
+                  <layout class="QHBoxLayout" name="horizontalLayout_31">
+                   <item>
+                    <widget class="QLabel" name="label_27">
+                     <property name="text">
+                      <string>Marca:</string>
+                     </property>
+                    </widget>
+                   </item>
+                   <item>
+                    <widget class="QComboBox" name="cbxActualizarMarcaProducto"/>
+                   </item>
+                  </layout>
+                 </item>
+                 <item row="3" column="1">
+                  <layout class="QHBoxLayout" name="horizontalLayout_32">
+                   <item>
+                    <widget class="QLabel" name="label_28">
+                     <property name="text">
+                      <string>Proveedor:</string>
+                     </property>
+                    </widget>
+                   </item>
+                   <item>
+                    <widget class="QComboBox" name="cbxActualizarProveedorProducto"/>
+                   </item>
+                  </layout>
+                 </item>
+                </layout>
+               </widget>
+              </item>
+              <item>
+               <layout class="QHBoxLayout" name="horizontalLayout_33">
+                <item>
+                 <widget class="QPushButton" name="btnActualizarProducto">
+                  <property name="text">
+                   <string>Actualizar</string>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <spacer name="horizontalSpacer_3">
+                  <property name="orientation">
+                   <enum>Qt::Orientation::Horizontal</enum>
+                  </property>
+                  <property name="sizeType">
+                   <enum>QSizePolicy::Policy::Fixed</enum>
+                  </property>
+                  <property name="sizeHint" stdset="0">
+                   <size>
+                    <width>100</width>
+                    <height>20</height>
+                   </size>
+                  </property>
+                 </spacer>
+                </item>
+                <item>
+                 <widget class="QPushButton" name="btnEliminarProducto">
+                  <property name="text">
+                   <string>Eliminar</string>
+                  </property>
+                 </widget>
+                </item>
+               </layout>
+              </item>
+              <item>
+               <widget class="QTableWidget" name="tbwActualizarProducto">
+                <column>
+                 <property name="text">
+                  <string>idProducto</string>
+                 </property>
+                </column>
+                <column>
+                 <property name="text">
+                  <string>Nombre</string>
+                 </property>
+                </column>
+                <column>
+                 <property name="text">
+                  <string>Descripcion</string>
+                 </property>
+                </column>
+                <column>
+                 <property name="text">
+                  <string>Precio</string>
+                 </property>
+                </column>
+                <column>
+                 <property name="text">
+                  <string>Stock</string>
+                 </property>
+                </column>
+                <column>
+                 <property name="text">
+                  <string>Categoria</string>
+                 </property>
+                </column>
+                <column>
+                 <property name="text">
+                  <string>Marca</string>
+                 </property>
+                </column>
+                <column>
+                 <property name="text">
+                  <string>Proveedor</string>
+                 </property>
+                </column>
                </widget>
               </item>
              </layout>
             </widget>
             <widget class="QWidget" name="pgHistorial">
-             <layout class="QGridLayout" name="gridLayout_3">
-              <item row="0" column="0">
+             <layout class="QVBoxLayout" name="verticalLayout_9">
+              <item>
                <widget class="QLabel" name="label_6">
                 <property name="text">
-                 <string>historial</string>
+                 <string>Historial de Cambios y Actualizaciones</string>
                 </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QTableWidget" name="tbwHistorial">
+                <column>
+                 <property name="text">
+                  <string>idMovimiento</string>
+                 </property>
+                </column>
+                <column>
+                 <property name="text">
+                  <string>Producto</string>
+                 </property>
+                </column>
+                <column>
+                 <property name="text">
+                  <string>Usuario</string>
+                 </property>
+                </column>
+                <column>
+                 <property name="text">
+                  <string>Tipo de Movimiento</string>
+                 </property>
+                </column>
+                <column>
+                 <property name="text">
+                  <string>Cantidad Anterior</string>
+                 </property>
+                </column>
+                <column>
+                 <property name="text">
+                  <string>Cantidad Nueva</string>
+                 </property>
+                </column>
+                <column>
+                 <property name="text">
+                  <string>Fecha</string>
+                 </property>
+                </column>
                </widget>
               </item>
              </layout>
@@ -612,7 +1432,7 @@
  </widget>
  <resources>
   <include location="mainTuxTech.ui"/>
-  <include location="../Desktop/Tareas/ProgramacionIII/Proyecto_TuxTech/icon_resources.qrc"/>
+  <include location="../resources/icon_resources.qrc"/>
  </resources>
  <connections>
   <connection>
@@ -772,6 +1592,38 @@
     <hint type="destinationlabel">
      <x>652</x>
      <y>506</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>btnCatalogo_long</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>btnCatalogo_short</receiver>
+   <slot>setChecked(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>136</x>
+     <y>168</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>37</x>
+     <y>180</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>btnCatalogo_short</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>btnCatalogo_long</receiver>
+   <slot>setChecked(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>37</x>
+     <y>180</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>162</x>
+     <y>168</y>
     </hint>
    </hints>
   </connection>

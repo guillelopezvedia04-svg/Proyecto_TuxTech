@@ -8,6 +8,7 @@ from src.windows.register_window import RegisterWindow
 class Login(QDialog):
     def __init__(self):
         super().__init__()
+        self.authenticated_user = None
         self.ui = Ui_vtnLogin()
         self.ui.setupUi(self)
 
@@ -36,6 +37,7 @@ class Login(QDialog):
             )
             return
 
+        self.authenticated_user = user
         self.accept()
 
     def abrir_registro(self):
