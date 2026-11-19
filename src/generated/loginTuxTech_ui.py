@@ -1,4 +1,4 @@
-# Form implementation generated from reading ui file '.\loginTuxTech.ui'
+# Form implementation generated from reading ui file 'ui/loginTuxTech.ui'
 #
 # Created by: PyQt6 UI code generator 6.12.0
 #
@@ -114,7 +114,7 @@ class Ui_vtnLogin(object):
         self.btnEntrar.setIcon(icon)
         self.btnEntrar.setObjectName("btnEntrar")
         self.verticalLayout_3.addWidget(self.btnEntrar, 0, QtCore.Qt.AlignmentFlag.AlignHCenter)
-        spacerItem3 = QtWidgets.QSpacerItem(20, 5, QtWidgets.QSizePolicy.Policy.Minimum, QtWidgets.QSizePolicy.Policy.Fixed)
+        spacerItem3 = QtWidgets.QSpacerItem(20, 50, QtWidgets.QSizePolicy.Policy.Minimum, QtWidgets.QSizePolicy.Policy.Fixed)
         self.verticalLayout_3.addItem(spacerItem3)
         self.btnRegistrar = QtWidgets.QPushButton(parent=vtnLogin)
         self.btnRegistrar.setMinimumSize(QtCore.QSize(150, 20))

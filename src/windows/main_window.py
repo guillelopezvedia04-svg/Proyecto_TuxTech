@@ -2,6 +2,7 @@ import sys
 
 from PyQt6.QtWidgets import QApplication, QMainWindow
 from PyQt6.QtCore import pyqtSignal
+from PyQt6.QtWidgets import QHeaderView
 
 from src.generated import icon_resources_rc
 from src.generated.mainTuxTech_ui import Ui_MainWindow
@@ -11,6 +12,7 @@ from src.services.product_service import ProductService
 from src.windows.catalog_controller import CatalogController
 from src.windows.history_controller import HistoryController
 from src.windows.product_controller import ProductController
+from src.theme import aplicar_tema, guardar_tema, tema_actual
 
 
 class MainWindow(QMainWindow):
@@ -42,12 +44,24 @@ class MainWindow(QMainWindow):
         self.ui.btnCerrarSesion_short.clicked.connect(self.cerrar_sesion)
         self.ui.btnCerrarSesion_long.clicked.connect(self.cerrar_sesion)
 
+        # Cambio de tema compartido por la barra visible y la barra compacta
+        self.ui.cbxCambiarModo_short.toggled.connect(self.cambiar_modo_tema)
+        self.ui.cbxCambiarModo_long.toggled.connect(self.cambiar_modo_tema)
+
         # Configuracion inicial de la ventana
         self.ui.wdgBarraOculta.hide()
         self.ui.stwPrincipal.setCurrentIndex(0)
         self.ui.stwCatalogo.setCurrentIndex(0)
         self.ui.btnAgregar_long.setChecked(True)
         self.ui.btnCategorias.setChecked(True)
+
+        modo_oscuro = tema_actual()
+        self.ui.cbxCambiarModo_short.blockSignals(True)
+        self.ui.cbxCambiarModo_short.setChecked(modo_oscuro)
+        self.ui.cbxCambiarModo_short.blockSignals(False)
+        self.ui.cbxCambiarModo_long.blockSignals(True)
+        self.ui.cbxCambiarModo_long.setChecked(modo_oscuro)
+        self.ui.cbxCambiarModo_long.blockSignals(False)
 
         # Servicios
         self.categoria_servicio = CatalogService(
@@ -146,9 +160,74 @@ class MainWindow(QMainWindow):
             service=self.movimiento_servicio,
         )
 
+        self.configurar_tablas()
+
         # Busqueda universal
         self.ui.txtBuscar.textChanged.connect(self.buscar)
         self.actualizar_busqueda()
+
+    def configurar_tablas(self):
+        tablas_catalogo = (
+            self.ui.tbwCategoria,
+            self.ui.tbwCategoriaMarca,
+            self.ui.tbwProveedores,
+        )
+
+        for tabla in tablas_catalogo:
+            header = tabla.horizontalHeader()
+            header.setSectionResizeMode(1, QHeaderView.ResizeMode.Stretch)
+            header.setSectionResizeMode(2, QHeaderView.ResizeMode.Stretch)
+            header.setSectionResizeMode(3, QHeaderView.ResizeMode.ResizeToContents)
+            tabla.verticalHeader().setDefaultSectionSize(32)
+            tabla.setAlternatingRowColors(True)
+            tabla.setShowGrid(False)
+
+        for tabla in (
+            self.ui.tbwAgregarProducto,
+            self.ui.tbwActualizarProducto,
+        ):
+            header = tabla.horizontalHeader()
+            header.setSectionResizeMode(1, QHeaderView.ResizeMode.Stretch)
+            header.setSectionResizeMode(2, QHeaderView.ResizeMode.Stretch)
+            for columna in (3, 4):
+                header.setSectionResizeMode(
+                    columna,
+                    QHeaderView.ResizeMode.ResizeToContents,
+                )
+            for columna in (5, 6, 7):
+                header.setSectionResizeMode(
+                    columna,
+                    QHeaderView.ResizeMode.Stretch,
+                )
+            tabla.verticalHeader().setDefaultSectionSize(32)
+            tabla.setAlternatingRowColors(True)
+            tabla.setShowGrid(False)
+
+        tabla = self.ui.tbwHistorial
+        header = tabla.horizontalHeader()
+        header.setSectionResizeMode(1, QHeaderView.ResizeMode.Stretch)
+        header.setSectionResizeMode(2, QHeaderView.ResizeMode.ResizeToContents)
+        header.setSectionResizeMode(3, QHeaderView.ResizeMode.ResizeToContents)
+        header.setSectionResizeMode(4, QHeaderView.ResizeMode.ResizeToContents)
+        header.setSectionResizeMode(5, QHeaderView.ResizeMode.ResizeToContents)
+        header.setSectionResizeMode(6, QHeaderView.ResizeMode.ResizeToContents)
+        tabla.verticalHeader().setDefaultSectionSize(32)
+        tabla.setAlternatingRowColors(True)
+        tabla.setShowGrid(False)
+
+    def cambiar_modo_tema(self, modo_oscuro):
+        if self.ui.cbxCambiarModo_short.isChecked() != modo_oscuro:
+            self.ui.cbxCambiarModo_short.blockSignals(True)
+            self.ui.cbxCambiarModo_short.setChecked(modo_oscuro)
+            self.ui.cbxCambiarModo_short.blockSignals(False)
+
+        if self.ui.cbxCambiarModo_long.isChecked() != modo_oscuro:
+            self.ui.cbxCambiarModo_long.blockSignals(True)
+            self.ui.cbxCambiarModo_long.setChecked(modo_oscuro)
+            self.ui.cbxCambiarModo_long.blockSignals(False)
+
+        guardar_tema(modo_oscuro)
+        aplicar_tema(modo_oscuro)
 
     def buscar(self, texto):
         controlador = self.controlador_actual()

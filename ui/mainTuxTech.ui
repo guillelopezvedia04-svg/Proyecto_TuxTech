@@ -265,6 +265,13 @@
               </property>
              </widget>
             </item>
+            <item>
+             <widget class="QCheckBox" name="cbxCambiarModo_short">
+              <property name="text">
+               <string/>
+              </property>
+             </widget>
+            </item>
            </layout>
           </item>
          </layout>
@@ -450,6 +457,13 @@
                 <width>14</width>
                 <height>14</height>
                </size>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QCheckBox" name="cbxCambiarModo_long">
+              <property name="text">
+               <string>Modo Oscuro</string>
               </property>
              </widget>
             </item>

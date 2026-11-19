@@ -5,10 +5,14 @@ from PyQt6.QtWidgets import QApplication, QDialog
 from src.windows.main_window import MainWindow
 from src.windows.login_window import Login
 from src.database.connection import initialize_database
+from src.theme import aplicar_tema, tema_actual
+
 
 def main():
     initialize_database()
     app = QApplication(sys.argv)
+    app.setStyle("Fusion")
+    aplicar_tema(tema_actual())
 
     while True:
         login = Login()

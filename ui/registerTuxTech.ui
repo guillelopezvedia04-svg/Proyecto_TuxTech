@@ -82,6 +82,13 @@
       <layout class="QHBoxLayout" name="horizontalLayout">
        <item>
         <widget class="QLabel" name="label_3">
+         <property name="font">
+          <font>
+           <family>Segoe UI</family>
+           <pointsize>10</pointsize>
+           <weight>400</weight>
+          </font>
+         </property>
          <property name="text">
           <string>Usuario:</string>
          </property>
@@ -115,6 +122,13 @@
       <layout class="QHBoxLayout" name="horizontalLayout_2">
        <item>
         <widget class="QLabel" name="label_4">
+         <property name="font">
+          <font>
+           <family>Segoe UI</family>
+           <pointsize>10</pointsize>
+           <weight>400</weight>
+          </font>
+         </property>
          <property name="text">
           <string>Correo:</string>
          </property>
@@ -136,6 +150,13 @@
       <layout class="QHBoxLayout" name="horizontalLayout_3">
        <item>
         <widget class="QLabel" name="label_6">
+         <property name="font">
+          <font>
+           <family>Segoe UI</family>
+           <pointsize>10</pointsize>
+           <weight>400</weight>
+          </font>
+         </property>
          <property name="text">
           <string>Contraseña:</string>
          </property>
@@ -160,6 +181,13 @@
       <layout class="QHBoxLayout" name="horizontalLayout_4">
        <item>
         <widget class="QLabel" name="label_5">
+         <property name="font">
+          <font>
+           <family>Segoe UI</family>
+           <pointsize>10</pointsize>
+           <weight>400</weight>
+          </font>
+         </property>
          <property name="text">
           <string>Repetir Contraseña:</string>
          </property>

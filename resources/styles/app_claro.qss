@@ -1,0 +1,565 @@
+/* ============================================================
+   TuxTech - Tema claro
+   ------------------------------------------------------------
+   fondo_app        #F3F5F7      barra_lateral     #E6EAEE
+   superficie       #FFFFFF      superficie_hover  #EAEEF2
+   borde            #D3D9DF      texto             #1E2226
+   texto_suave      #5F6B76      texto_deshabilitado #A3ACB5
+   acento           #0B7BD6      acento_hover      #2B93EB
+   peligro          #D1362F      exito             #1F8A3B
+   ============================================================ */
+
+/* ---------- Ventanas ---------- */
+QMainWindow,
+QDialog {
+    background-color: #F3F5F7;
+}
+
+QMainWindow {
+    font-family: "Segoe UI";
+    font-size: 10px;
+}
+
+QDialog {
+    font-family: "Segoe UI";
+}
+
+QWidget#centralwidget,
+QStackedWidget {
+    background-color: transparent;
+}
+
+QToolTip {
+    background-color: #FFFFFF;
+    color: #1E2226;
+    border: 1px solid #D3D9DF;
+    border-radius: 6px;
+    padding: 6px 8px;
+}
+
+/* ---------- Barra lateral ---------- */
+QWidget#wdgBarraOculta,
+QWidget#wdgBarraVisible {
+    background-color: #E6EAEE;
+}
+
+QWidget#wdgBarraVisible {
+    border-right: 1px solid #D3D9DF;
+}
+
+QWidget#wdgMainMenu {
+    background-color: #F3F5F7;
+}
+
+/* ---------- Encabezado ---------- */
+QWidget#widget {
+    background-color: #FFFFFF;
+    border-bottom: 1px solid #D3D9DF;
+}
+
+/* ---------- Tarjetas de formulario ---------- */
+QWidget#widget_2,
+QWidget#widget_3,
+QWidget#wdgCategoria {
+    background-color: #FFFFFF;
+    border: 1px solid #D3D9DF;
+    border-radius: 8px;
+}
+
+/* ---------- Textos ---------- */
+QLabel {
+    background-color: transparent;
+    color: #5F6B76;
+}
+
+QLabel#label1 {
+    color: #0B7BD6;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+QLabel#lblUser_2 {
+    color: #1E2226;
+    font-weight: 600;
+}
+
+QMainWindow QLabel#label_6 {
+    color: #1E2226;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+QDialog#vtnRegister QLabel {
+    color: #5F6B76;
+    font-family: "Segoe UI";
+    font-size: 10px;
+    font-weight: 400;
+}
+
+QDialog#vtnRegister QLabel#label_2 {
+    color: #1E2226;
+    font-size: 26px;
+    font-weight: 700;
+}
+
+QDialog#vtnRegister QLabel#label {
+    color: #5F6B76;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+/* ---------- Campos de texto ---------- */
+QLineEdit,
+QComboBox,
+QSpinBox,
+QDoubleSpinBox {
+    background-color: #FFFFFF;
+    color: #1E2226;
+    border: 1px solid #D3D9DF;
+    border-radius: 6px;
+    min-height: 32px;
+    padding: 0 8px;
+    selection-background-color: #0B7BD6;
+    selection-color: #FFFFFF;
+}
+
+QLineEdit:hover,
+QComboBox:hover,
+QSpinBox:hover,
+QDoubleSpinBox:hover {
+    border-color: #C2CAD2;
+}
+
+QLineEdit:focus,
+QComboBox:focus,
+QSpinBox:focus,
+QDoubleSpinBox:focus {
+    border-color: #0B7BD6;
+}
+
+QLineEdit:disabled,
+QComboBox:disabled,
+QSpinBox:disabled,
+QDoubleSpinBox:disabled {
+    background-color: #E4E9ED;
+    color: #A3ACB5;
+    border-color: #EAEEF2;
+}
+
+QLineEdit {
+    placeholder-text-color: #A3ACB5;
+}
+
+/* ---------- ComboBox ---------- */
+QComboBox {
+    padding-right: 26px;
+}
+
+QComboBox::drop-down {
+    subcontrol-origin: padding;
+    subcontrol-position: center right;
+    width: 24px;
+    border: none;
+    background: transparent;
+}
+
+QComboBox::down-arrow {
+    image: url(resources/icons/chevron_down_claro.svg);
+    width: 10px;
+    height: 6px;
+}
+
+QComboBox QAbstractItemView {
+    background-color: #FFFFFF;
+    color: #1E2226;
+    border: 1px solid #D3D9DF;
+    padding: 4px;
+    outline: none;
+    selection-background-color: #0B7BD6;
+    selection-color: #FFFFFF;
+}
+
+QComboBox QAbstractItemView::item {
+    min-height: 26px;
+    padding: 0 8px;
+}
+
+/* ---------- SpinBox ---------- */
+QSpinBox,
+QDoubleSpinBox {
+    padding-right: 26px;
+}
+
+QSpinBox::up-button,
+QDoubleSpinBox::up-button {
+    subcontrol-origin: border;
+    subcontrol-position: top right;
+    width: 22px;
+    background-color: #FFFFFF;
+    border: none;
+    border-left: 1px solid #D3D9DF;
+    border-top-right-radius: 6px;
+}
+
+QSpinBox::down-button,
+QDoubleSpinBox::down-button {
+    subcontrol-origin: border;
+    subcontrol-position: bottom right;
+    width: 22px;
+    background-color: #FFFFFF;
+    border: none;
+    border-left: 1px solid #D3D9DF;
+    border-bottom-right-radius: 6px;
+}
+
+QSpinBox::up-button:hover,
+QDoubleSpinBox::up-button:hover,
+QSpinBox::down-button:hover,
+QDoubleSpinBox::down-button:hover {
+    background-color: #EAEEF2;
+}
+
+QSpinBox::up-arrow,
+QDoubleSpinBox::up-arrow {
+    image: url(resources/icons/chevron_up_claro.svg);
+    width: 9px;
+    height: 5px;
+}
+
+QSpinBox::down-arrow,
+QDoubleSpinBox::down-arrow {
+    image: url(resources/icons/chevron_down_claro.svg);
+    width: 9px;
+    height: 5px;
+}
+
+/* ---------- Botones ---------- */
+QPushButton {
+    background-color: #FFFFFF;
+    color: #1E2226;
+    border: 1px solid #D3D9DF;
+    border-radius: 6px;
+    min-height: 34px;
+    padding: 0 16px;
+    font-weight: 600;
+}
+
+QPushButton:hover {
+    background-color: #EAEEF2;
+    border-color: #C2CAD2;
+}
+
+QPushButton:pressed {
+    background-color: #E4E9ED;
+}
+
+QPushButton:disabled {
+    background-color: #E4E9ED;
+    color: #A3ACB5;
+    border-color: #EAEEF2;
+}
+
+QPushButton:focus {
+    border-color: #0B7BD6;
+}
+
+/* Boton principal */
+QPushButton#btnAgregarProducto,
+QPushButton#btnActualizarProducto,
+QPushButton#btnAgregarCategoria,
+QPushButton#btnActualizarCategoria,
+QPushButton#btnAgregarMarca,
+QPushButton#btnActualizarMarca,
+QPushButton#btnAgregarProveedores,
+QPushButton#btnActualizarProveedores,
+QDialog#vtnLogin QPushButton#btnEntrar,
+QDialog#vtnRegister QPushButton#btnRegistrar {
+    background-color: #0B7BD6;
+    color: #FFFFFF;
+    border: 1px solid #0B7BD6;
+}
+
+QPushButton#btnAgregarProducto:hover,
+QPushButton#btnActualizarProducto:hover,
+QPushButton#btnAgregarCategoria:hover,
+QPushButton#btnActualizarCategoria:hover,
+QPushButton#btnAgregarMarca:hover,
+QPushButton#btnActualizarMarca:hover,
+QPushButton#btnAgregarProveedores:hover,
+QPushButton#btnActualizarProveedores:hover,
+QDialog#vtnLogin QPushButton#btnEntrar:hover,
+QDialog#vtnRegister QPushButton#btnRegistrar:hover {
+    background-color: #2B93EB;
+    border-color: #2B93EB;
+}
+
+QPushButton#btnAgregarProducto:pressed,
+QPushButton#btnActualizarProducto:pressed,
+QPushButton#btnAgregarCategoria:pressed,
+QPushButton#btnActualizarCategoria:pressed,
+QPushButton#btnAgregarMarca:pressed,
+QPushButton#btnActualizarMarca:pressed,
+QPushButton#btnAgregarProveedores:pressed,
+QPushButton#btnActualizarProveedores:pressed,
+QDialog#vtnLogin QPushButton#btnEntrar:pressed,
+QDialog#vtnRegister QPushButton#btnRegistrar:pressed {
+    background-color: #0A6BB8;
+    border-color: #0A6BB8;
+}
+
+/* Boton peligro */
+QPushButton#btnEliminarProducto {
+    background-color: #D1362F;
+    color: #FFFFFF;
+    border: 1px solid #D1362F;
+}
+
+QPushButton#btnEliminarProducto:hover {
+    background-color: #E05049;
+    border-color: #E05049;
+}
+
+QPushButton#btnEliminarProducto:pressed {
+    background-color: #B32B25;
+    border-color: #B32B25;
+}
+
+/* Boton secundario de login */
+QDialog#vtnLogin QPushButton#btnRegistrar {
+    background-color: transparent;
+    color: #0B7BD6;
+    border: 1px solid #D3D9DF;
+}
+
+QDialog#vtnLogin QPushButton#btnRegistrar:hover {
+    background-color: #E4E9ED;
+    border-color: #0B7BD6;
+}
+
+/* ---------- Barra lateral: botones largos ---------- */
+QWidget#wdgBarraVisible QPushButton {
+    background-color: transparent;
+    border: none;
+    border-radius: 6px;
+    min-height: 36px;
+    padding: 0 12px;
+    text-align: left;
+    font-weight: 400;
+    color: #5F6B76;
+}
+
+QWidget#wdgBarraVisible QPushButton:hover {
+    background-color: #E4E9ED;
+    color: #1E2226;
+}
+
+QWidget#wdgBarraVisible QPushButton:checked {
+    background-color: rgba(11, 123, 214, 0.12);
+    color: #0B7BD6;
+}
+
+/* ---------- Barra lateral: botones de icono ---------- */
+QWidget#wdgBarraOculta QPushButton {
+    background-color: transparent;
+    border: none;
+    border-radius: 6px;
+    min-height: 36px;
+    padding: 6px;
+}
+
+QWidget#wdgBarraOculta QPushButton:hover {
+    background-color: #E4E9ED;
+}
+
+QWidget#wdgBarraOculta QPushButton:checked {
+    background-color: rgba(11, 123, 214, 0.12);
+}
+
+/* ---------- Encabezado: boton de menu ---------- */
+QPushButton#btnMoverBarra {
+    background-color: transparent;
+    border: none;
+    border-radius: 6px;
+    min-height: 32px;
+    padding: 6px;
+}
+
+QPushButton#btnMoverBarra:hover {
+    background-color: #EAEEF2;
+}
+
+/* ---------- Pestanas del catalogo ---------- */
+QPushButton#btnCategorias,
+QPushButton#btnMarcas,
+QPushButton#btnProveedores {
+    background-color: transparent;
+    color: #5F6B76;
+    border: 1px solid #D3D9DF;
+    min-height: 32px;
+    padding: 0 16px;
+}
+
+QPushButton#btnCategorias:hover,
+QPushButton#btnMarcas:hover,
+QPushButton#btnProveedores:hover {
+    background-color: #E4E9ED;
+    color: #1E2226;
+}
+
+QPushButton#btnCategorias:checked,
+QPushButton#btnMarcas:checked,
+QPushButton#btnProveedores:checked {
+    background-color: rgba(11, 123, 214, 0.12);
+    color: #0B7BD6;
+    border-color: #0B7BD6;
+}
+
+/* ---------- Tablas ---------- */
+QTableWidget {
+    background-color: #FFFFFF;
+    alternate-background-color: #F7F9FA;
+    color: #1E2226;
+    border: 1px solid #D3D9DF;
+    border-radius: 6px;
+    gridline-color: transparent;
+    outline: none;
+    font-size: 9px;
+    selection-background-color: rgba(11, 123, 214, 0.18);
+    selection-color: #1E2226;
+}
+
+QTableWidget::item {
+    padding: 0 8px;
+    border: none;
+}
+
+QTableWidget::item:selected {
+    background-color: rgba(11, 123, 214, 0.18);
+    color: #1E2226;
+}
+
+QHeaderView {
+    background-color: transparent;
+}
+
+QHeaderView::section {
+    background-color: #E4E9ED;
+    color: #5F6B76;
+    border: none;
+    border-bottom: 1px solid #D3D9DF;
+    padding: 0 8px;
+    min-height: 34px;
+    font-size: 9px;
+    font-weight: 600;
+}
+
+QTableCornerButton::section {
+    background-color: #E4E9ED;
+    border: none;
+}
+
+/* ---------- CheckBox ---------- */
+QCheckBox {
+    background-color: transparent;
+    color: #5F6B76;
+    spacing: 8px;
+}
+
+QCheckBox::indicator {
+    width: 16px;
+    height: 16px;
+    border: 1px solid #D3D9DF;
+    border-radius: 4px;
+    background-color: #FFFFFF;
+}
+
+QCheckBox::indicator:hover {
+    border-color: #0B7BD6;
+}
+
+QCheckBox::indicator:checked {
+    background-color: #0B7BD6;
+    border-color: #0B7BD6;
+    image: url(resources/icons/check_claro.svg);
+}
+
+QCheckBox::indicator:disabled {
+    background-color: #E4E9ED;
+    border-color: #D3D9DF;
+}
+
+QCheckBox::indicator:checked:disabled {
+    background-color: #E4E9ED;
+    border-color: #D3D9DF;
+    image: url(resources/icons/check_oscuro.svg);
+}
+
+QCheckBox:checked {
+    color: #1E2226;
+}
+
+/* ---------- RadioButton ---------- */
+QRadioButton {
+    background-color: transparent;
+    color: #5F6B76;
+    spacing: 8px;
+}
+
+/* ---------- Barras de desplazamiento ---------- */
+QScrollBar:vertical {
+    background: transparent;
+    width: 10px;
+    margin: 0;
+}
+
+QScrollBar::handle:vertical {
+    background-color: #D3D9DF;
+    border-radius: 5px;
+    min-height: 30px;
+}
+
+QScrollBar::handle:vertical:hover {
+    background-color: #C2CAD2;
+}
+
+QScrollBar:horizontal {
+    background: transparent;
+    height: 10px;
+    margin: 0;
+}
+
+QScrollBar::handle:horizontal {
+    background-color: #D3D9DF;
+    border-radius: 5px;
+    min-width: 30px;
+}
+
+QScrollBar::handle:horizontal:hover {
+    background-color: #C2CAD2;
+}
+
+QScrollBar::add-line,
+QScrollBar::sub-line {
+    width: 0;
+    height: 0;
+    border: none;
+    background: none;
+}
+
+QScrollBar::add-page,
+QScrollBar::sub-page {
+    background: transparent;
+}
+
+/* ---------- Cuadros de mensaje ---------- */
+QMessageBox {
+    background-color: #F3F5F7;
+}
+
+QMessageBox QLabel {
+    color: #1E2226;
+}
+
+QMessageBox QPushButton {
+    min-width: 84px;
+}

@@ -310,7 +310,7 @@
           <string>Entrar</string>
          </property>
          <property name="icon">
-          <iconset resource="icon_resources.qrc">
+          <iconset>
            <normaloff>:/iconos/enter.svg</normaloff>:/iconos/enter.svg</iconset>
          </property>
         </widget>
@@ -326,7 +326,7 @@
          <property name="sizeHint" stdset="0">
           <size>
            <width>20</width>
-           <height>5</height>
+           <height>50</height>
           </size>
          </property>
         </spacer>
@@ -354,7 +354,7 @@
           <string>Registrarse</string>
          </property>
          <property name="icon">
-          <iconset resource="icon_resources.qrc">
+          <iconset>
            <normaloff>:/iconos/add.svg</normaloff>:/iconos/add.svg</iconset>
          </property>
         </widget>
@@ -365,8 +365,6 @@
    </item>
   </layout>
  </widget>
- <resources>
-  <include location="icon_resources.qrc"/>
- </resources>
+ <resources/>
  <connections/>
 </ui>
