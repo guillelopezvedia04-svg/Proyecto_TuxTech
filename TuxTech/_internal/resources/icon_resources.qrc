@@ -1,0 +1,36 @@
+<RCC>
+  <qresource prefix="/iconos">
+    <file>icons/ajustes-deslizadores.svg</file>
+    <file>icons/basura.svg</file>
+    <file>icons/cubo.svg</file>
+    <file>icons/mapa.svg</file>
+    <file>icons/trash.svg</file>
+    <file>icons/gente.png</file>
+    <file alias="add(1).svg">icons/add(1).svg</file>
+    <file alias="add.svg">icons/add.svg</file>
+    <file alias="angle-left.svg">icons/angle-left.svg</file>
+    <file alias="angle-right.svg">icons/angle-right.svg</file>
+    <file alias="apps(1).svg">icons/apps(1).svg</file>
+    <file alias="apps.svg">icons/apps.svg</file>
+    <file alias="books(1).svg">icons/books(1).svg</file>
+    <file alias="books.svg">icons/books.svg</file>
+    <file alias="cross.svg">icons/cross.svg</file>
+    <file alias="enter.svg">icons/enter.svg</file>
+    <file alias="exit.svg">icons/exit.svg</file>
+    <file alias="home(1).svg">icons/home(1).svg</file>
+    <file alias="home(2).svg">icons/home(2).svg</file>
+    <file alias="menu-burger.svg">icons/menu-burger.svg</file>
+    <file alias="plus.svg">icons/plus.svg</file>
+    <file alias="search.svg">icons/search.svg</file>
+    <file alias="settings(1).svg">icons/settings(1).svg</file>
+    <file alias="settings.svg">icons/settings.svg</file>
+    <file alias="shopping-cart.svg">icons/shopping-cart.svg</file>
+    <file alias="stats.svg">icons/stats.svg</file>
+    <file alias="trash.svg">icons/trash.svg</file>
+    <file alias="tux.svg">icons/tux.svg</file>
+    <file alias="tuxtexh_logo.svg">icons/tuxtexh_logo.svg</file>
+    <file alias="user(1).svg">icons/user(1).svg</file>
+    <file alias="user(2).svg">icons/user(2).svg</file>
+    <file alias="user(3).svg">icons/user(3).svg</file>
+  </qresource>
+</RCC>
